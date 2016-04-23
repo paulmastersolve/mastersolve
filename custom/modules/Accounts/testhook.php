@@ -9,7 +9,7 @@
 
           foreach ($contacts as $contact)
           {
-            $contact->description="This is working!!!";
+            $contact->description="This is working!!! Cool!";
             $contact->save(false);
           }
 
