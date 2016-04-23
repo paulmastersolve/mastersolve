@@ -1,5 +1,5 @@
 <?php
-// created: 2016-04-18 15:38:15
+// created: 2016-04-22 19:59:43
 $existing_files = array (
   'cron.php' => 1,
   'HandleAjaxCall.php' => 1,
@@ -7,6 +7,7 @@ $existing_files = array (
   'pdf.php' => 1,
   'portal2' => 
   array (
+    'config.js' => 1,
     'portal.js' => 1,
     'index.html' => 1,
     'error.js' => 1,
@@ -2182,6 +2183,9 @@ $existing_files = array (
     ),
   ),
   'acceptDecline.php' => 1,
+  'upload:' => 
+  array (
+  ),
   'install' => 
   array (
     'demoData.bg_BG.php' => 1,
@@ -17910,6 +17914,825 @@ $existing_files = array (
     'ModuleInstaller.php' => 1,
     'ModuleScanner.php' => 1,
   ),
+  '.git' => 
+  array (
+    'objects' => 
+    array (
+      20 => 
+      array (
+      ),
+      56 => 
+      array (
+      ),
+      'c5' => 
+      array (
+      ),
+      'f3' => 
+      array (
+      ),
+      'aa' => 
+      array (
+      ),
+      'a6' => 
+      array (
+      ),
+      'b8' => 
+      array (
+      ),
+      '0b' => 
+      array (
+      ),
+      16 => 
+      array (
+      ),
+      '3a' => 
+      array (
+      ),
+      74 => 
+      array (
+      ),
+      '7f' => 
+      array (
+      ),
+      'c6' => 
+      array (
+      ),
+      'cf' => 
+      array (
+      ),
+      98 => 
+      array (
+      ),
+      '5b' => 
+      array (
+      ),
+      '04' => 
+      array (
+      ),
+      'a8' => 
+      array (
+      ),
+      '6b' => 
+      array (
+      ),
+      46 => 
+      array (
+      ),
+      24 => 
+      array (
+      ),
+      '8e' => 
+      array (
+      ),
+      78 => 
+      array (
+      ),
+      '9d' => 
+      array (
+      ),
+      79 => 
+      array (
+      ),
+      76 => 
+      array (
+      ),
+      55 => 
+      array (
+      ),
+      'f2' => 
+      array (
+      ),
+      '5c' => 
+      array (
+      ),
+      '05' => 
+      array (
+      ),
+      'c1' => 
+      array (
+      ),
+      90 => 
+      array (
+      ),
+      '2e' => 
+      array (
+      ),
+      'ff' => 
+      array (
+      ),
+      12 => 
+      array (
+      ),
+      'ae' => 
+      array (
+      ),
+      'e9' => 
+      array (
+      ),
+      '9b' => 
+      array (
+      ),
+      'ad' => 
+      array (
+      ),
+      'db' => 
+      array (
+      ),
+      'e1' => 
+      array (
+      ),
+      'c3' => 
+      array (
+      ),
+      51 => 
+      array (
+      ),
+      '6f' => 
+      array (
+      ),
+      70 => 
+      array (
+      ),
+      77 => 
+      array (
+      ),
+      'f4' => 
+      array (
+      ),
+      'd0' => 
+      array (
+      ),
+      43 => 
+      array (
+      ),
+      10 => 
+      array (
+      ),
+      'd3' => 
+      array (
+      ),
+      'b5' => 
+      array (
+      ),
+      '07' => 
+      array (
+      ),
+      73 => 
+      array (
+      ),
+      'a4' => 
+      array (
+      ),
+      'be' => 
+      array (
+      ),
+      'a2' => 
+      array (
+      ),
+      84 => 
+      array (
+      ),
+      34 => 
+      array (
+      ),
+      'd1' => 
+      array (
+      ),
+      49 => 
+      array (
+      ),
+      'b9' => 
+      array (
+      ),
+      '1b' => 
+      array (
+      ),
+      'ea' => 
+      array (
+      ),
+      'b4' => 
+      array (
+      ),
+      '8c' => 
+      array (
+      ),
+      'ee' => 
+      array (
+      ),
+      '06' => 
+      array (
+      ),
+      '8d' => 
+      array (
+      ),
+      '3c' => 
+      array (
+      ),
+      59 => 
+      array (
+      ),
+      53 => 
+      array (
+      ),
+      25 => 
+      array (
+      ),
+      44 => 
+      array (
+      ),
+      'e8' => 
+      array (
+      ),
+      '1a' => 
+      array (
+      ),
+      '3d' => 
+      array (
+      ),
+      'f1' => 
+      array (
+      ),
+      33 => 
+      array (
+      ),
+      13 => 
+      array (
+      ),
+      'bd' => 
+      array (
+      ),
+      '4b' => 
+      array (
+      ),
+      'da' => 
+      array (
+      ),
+      '4a' => 
+      array (
+      ),
+      'd8' => 
+      array (
+      ),
+      '3f' => 
+      array (
+      ),
+      '9e' => 
+      array (
+      ),
+      'c9' => 
+      array (
+      ),
+      64 => 
+      array (
+      ),
+      19 => 
+      array (
+      ),
+      66 => 
+      array (
+      ),
+      'ec' => 
+      array (
+      ),
+      18 => 
+      array (
+      ),
+      29 => 
+      array (
+      ),
+      '0e' => 
+      array (
+      ),
+      95 => 
+      array (
+      ),
+      '4f' => 
+      array (
+      ),
+      '00' => 
+      array (
+      ),
+      86 => 
+      array (
+      ),
+      'f9' => 
+      array (
+      ),
+      'a3' => 
+      array (
+      ),
+      87 => 
+      array (
+      ),
+      'fc' => 
+      array (
+      ),
+      'c0' => 
+      array (
+      ),
+      '2a' => 
+      array (
+      ),
+      96 => 
+      array (
+      ),
+      'fb' => 
+      array (
+      ),
+      'c8' => 
+      array (
+      ),
+      39 => 
+      array (
+      ),
+      '4d' => 
+      array (
+      ),
+      'd9' => 
+      array (
+      ),
+      'ef' => 
+      array (
+      ),
+      'eb' => 
+      array (
+      ),
+      '02' => 
+      array (
+      ),
+      '03' => 
+      array (
+      ),
+      69 => 
+      array (
+      ),
+      'a1' => 
+      array (
+      ),
+      99 => 
+      array (
+      ),
+      '4e' => 
+      array (
+      ),
+      'b0' => 
+      array (
+      ),
+      42 => 
+      array (
+      ),
+      21 => 
+      array (
+      ),
+      60 => 
+      array (
+      ),
+      32 => 
+      array (
+      ),
+      27 => 
+      array (
+      ),
+      82 => 
+      array (
+      ),
+      'b1' => 
+      array (
+      ),
+      'cc' => 
+      array (
+      ),
+      26 => 
+      array (
+      ),
+      '01' => 
+      array (
+      ),
+      '8f' => 
+      array (
+      ),
+      93 => 
+      array (
+      ),
+      61 => 
+      array (
+      ),
+      '9c' => 
+      array (
+      ),
+      97 => 
+      array (
+      ),
+      35 => 
+      array (
+      ),
+      68 => 
+      array (
+      ),
+      'a7' => 
+      array (
+      ),
+      22 => 
+      array (
+      ),
+      'cd' => 
+      array (
+      ),
+      'fd' => 
+      array (
+      ),
+      '7a' => 
+      array (
+      ),
+      'd4' => 
+      array (
+      ),
+      'ac' => 
+      array (
+      ),
+      '5e' => 
+      array (
+      ),
+      'df' => 
+      array (
+      ),
+      52 => 
+      array (
+      ),
+      'de' => 
+      array (
+      ),
+      28 => 
+      array (
+      ),
+      'fa' => 
+      array (
+      ),
+      72 => 
+      array (
+      ),
+      '5d' => 
+      array (
+      ),
+      41 => 
+      array (
+      ),
+      '08' => 
+      array (
+      ),
+      'e5' => 
+      array (
+      ),
+      '7b' => 
+      array (
+      ),
+      23 => 
+      array (
+      ),
+      'c2' => 
+      array (
+      ),
+      92 => 
+      array (
+      ),
+      'ba' => 
+      array (
+      ),
+      71 => 
+      array (
+      ),
+      '6e' => 
+      array (
+      ),
+      '7c' => 
+      array (
+      ),
+      94 => 
+      array (
+      ),
+      54 => 
+      array (
+      ),
+      '5f' => 
+      array (
+      ),
+      '1d' => 
+      array (
+      ),
+      'e2' => 
+      array (
+      ),
+      'b7' => 
+      array (
+      ),
+      '1f' => 
+      array (
+      ),
+      '6d' => 
+      array (
+      ),
+      '6c' => 
+      array (
+      ),
+      'pack' => 
+      array (
+      ),
+      'b3' => 
+      array (
+      ),
+      '6a' => 
+      array (
+      ),
+      58 => 
+      array (
+      ),
+      '5a' => 
+      array (
+      ),
+      89 => 
+      array (
+      ),
+      '8a' => 
+      array (
+      ),
+      'f6' => 
+      array (
+      ),
+      'c7' => 
+      array (
+      ),
+      '1e' => 
+      array (
+      ),
+      65 => 
+      array (
+      ),
+      '0c' => 
+      array (
+      ),
+      31 => 
+      array (
+      ),
+      '0a' => 
+      array (
+      ),
+      11 => 
+      array (
+      ),
+      'a0' => 
+      array (
+      ),
+      '7d' => 
+      array (
+      ),
+      91 => 
+      array (
+      ),
+      67 => 
+      array (
+      ),
+      'dd' => 
+      array (
+      ),
+      36 => 
+      array (
+      ),
+      'bb' => 
+      array (
+      ),
+      'ca' => 
+      array (
+      ),
+      'a5' => 
+      array (
+      ),
+      81 => 
+      array (
+      ),
+      'ab' => 
+      array (
+      ),
+      'bc' => 
+      array (
+      ),
+      'f0' => 
+      array (
+      ),
+      'fe' => 
+      array (
+      ),
+      63 => 
+      array (
+      ),
+      50 => 
+      array (
+      ),
+      'e0' => 
+      array (
+      ),
+      'bf' => 
+      array (
+      ),
+      15 => 
+      array (
+      ),
+      83 => 
+      array (
+      ),
+      'ce' => 
+      array (
+      ),
+      'cb' => 
+      array (
+      ),
+      '3e' => 
+      array (
+      ),
+      'dc' => 
+      array (
+      ),
+      'f7' => 
+      array (
+      ),
+      'f8' => 
+      array (
+      ),
+      'd7' => 
+      array (
+      ),
+      '9f' => 
+      array (
+      ),
+      40 => 
+      array (
+      ),
+      17 => 
+      array (
+      ),
+      38 => 
+      array (
+      ),
+      '7e' => 
+      array (
+      ),
+      '09' => 
+      array (
+      ),
+      '2b' => 
+      array (
+      ),
+      'f5' => 
+      array (
+      ),
+      48 => 
+      array (
+      ),
+      '4c' => 
+      array (
+      ),
+      57 => 
+      array (
+      ),
+      47 => 
+      array (
+      ),
+      85 => 
+      array (
+      ),
+      'info' => 
+      array (
+      ),
+      'd5' => 
+      array (
+      ),
+      '2c' => 
+      array (
+      ),
+      '0d' => 
+      array (
+      ),
+      37 => 
+      array (
+      ),
+      14 => 
+      array (
+      ),
+      30 => 
+      array (
+      ),
+      '9a' => 
+      array (
+      ),
+      'e7' => 
+      array (
+      ),
+      'd6' => 
+      array (
+      ),
+      '2f' => 
+      array (
+      ),
+      62 => 
+      array (
+      ),
+      88 => 
+      array (
+      ),
+      'e4' => 
+      array (
+      ),
+      'c4' => 
+      array (
+      ),
+      '3b' => 
+      array (
+      ),
+      'b6' => 
+      array (
+      ),
+      'ed' => 
+      array (
+      ),
+      80 => 
+      array (
+      ),
+      'af' => 
+      array (
+      ),
+      '2d' => 
+      array (
+      ),
+      '0f' => 
+      array (
+      ),
+      'd2' => 
+      array (
+      ),
+      'b2' => 
+      array (
+      ),
+      'a9' => 
+      array (
+      ),
+      '1c' => 
+      array (
+      ),
+      '8b' => 
+      array (
+      ),
+      45 => 
+      array (
+      ),
+      'e3' => 
+      array (
+      ),
+      'e6' => 
+      array (
+      ),
+      75 => 
+      array (
+      ),
+    ),
+    'refs' => 
+    array (
+      'heads' => 
+      array (
+      ),
+      'tags' => 
+      array (
+      ),
+      'remotes' => 
+      array (
+        'origin' => 
+        array (
+        ),
+      ),
+    ),
+    'hooks' => 
+    array (
+    ),
+    'logs' => 
+    array (
+      'refs' => 
+      array (
+        'heads' => 
+        array (
+        ),
+        'remotes' => 
+        array (
+          'origin' => 
+          array (
+          ),
+        ),
+      ),
+    ),
+    'branches' => 
+    array (
+    ),
+    'info' => 
+    array (
+    ),
+  ),
   'campaign_trackerv2.php' => 1,
   'removeme.php' => 1,
   'api' => 
@@ -25482,7 +26305,45 @@ $existing_files = array (
   ),
   'custom' => 
   array (
-    'index.html' => 1,
+    'working' => 
+    array (
+      'modules' => 
+      array (
+        'Tasks' => 
+        array (
+          'clients' => 
+          array (
+            'base' => 
+            array (
+              'views' => 
+              array (
+                'record' => 
+                array (
+                  'record.php' => 1,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+    'history' => 
+    array (
+    ),
+    'application' => 
+    array (
+      'Ext' => 
+      array (
+        'LogicHooks' => 
+        array (
+          'logichooks.ext.php' => 1,
+        ),
+        'ScheduledTasks' => 
+        array (
+          'scheduledtasks.ext.php' => 1,
+        ),
+      ),
+    ),
     'modules' => 
     array (
       'Forecasts' => 
@@ -25525,6 +26386,12 @@ $existing_files = array (
           ),
         ),
       ),
+      'Accounts' => 
+      array (
+        'testhook.php' => 1,
+        'logic_hooks.php' => 1,
+      ),
+      'unified_search_modules_display.php' => 1,
       'Opportunities' => 
       array (
         'Ext' => 
@@ -25545,6 +26412,37 @@ $existing_files = array (
           ),
         ),
       ),
+      'Tasks' => 
+      array (
+        'metadata' => 
+        array (
+          'subpanels' => 
+          array (
+            'Account_subpanel_tasks.php' => 1,
+          ),
+        ),
+        'clients' => 
+        array (
+          'base' => 
+          array (
+            'views' => 
+            array (
+              'subpanel-for-accounts-tasks' => 
+              array (
+                'subpanel-for-accounts-tasks.php' => 1,
+              ),
+              'record' => 
+              array (
+                'record.php' => 1,
+              ),
+              'list' => 
+              array (
+                'list.php' => 1,
+              ),
+            ),
+          ),
+        ),
+      ),
       'ForecastWorksheets' => 
       array (
         'Ext' => 
@@ -25553,6 +26451,14 @@ $existing_files = array (
           array (
             'logichooks.ext.php' => 1,
           ),
+        ),
+      ),
+      'Connectors' => 
+      array (
+        'metadata' => 
+        array (
+          'display_config.php' => 1,
+          'connectors.php' => 1,
         ),
       ),
       'Calls' => 
@@ -25565,29 +26471,10 @@ $existing_files = array (
           ),
         ),
       ),
-      'unified_search_modules_display.php' => 1,
-      'Connectors' => 
-      array (
-        'metadata' => 
-        array (
-          'display_config.php' => 1,
-          'connectors.php' => 1,
-        ),
-      ),
     ),
-    'application' => 
+    'index.html' => 1,
+    'Extension' => 
     array (
-      'Ext' => 
-      array (
-        'LogicHooks' => 
-        array (
-          'logichooks.ext.php' => 1,
-        ),
-        'ScheduledTasks' => 
-        array (
-          'scheduledtasks.ext.php' => 1,
-        ),
-      ),
     ),
   ),
   'export.php' => 1,
@@ -35173,5 +36060,4 @@ $existing_files = array (
     ),
     'UpgradeDropdownsHelper.php' => 1,
   ),
-  'install.log' => 1,
 );

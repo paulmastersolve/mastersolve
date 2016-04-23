@@ -320,6 +320,810 @@
     'rhs_key' => 'acl_role_set_id',
     'relationship_type' => 'one-to-many',
   ),
+  'emails_accounts_rel' => 
+  array (
+    'name' => 'emails_accounts_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Accounts',
+    'rhs_table' => 'accounts',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Accounts',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_bugs_rel' => 
+  array (
+    'name' => 'emails_bugs_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Bugs',
+    'rhs_table' => 'bugs',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Bugs',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_cases_rel' => 
+  array (
+    'name' => 'emails_cases_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Cases',
+    'rhs_table' => 'cases',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Cases',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_contacts_rel' => 
+  array (
+    'name' => 'emails_contacts_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Contacts',
+    'rhs_table' => 'contacts',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Contacts',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_leads_rel' => 
+  array (
+    'name' => 'emails_leads_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Leads',
+    'rhs_table' => 'leads',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Leads',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_opportunities_rel' => 
+  array (
+    'name' => 'emails_opportunities_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Opportunities',
+    'rhs_table' => 'opportunities',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Opportunities',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_tasks_rel' => 
+  array (
+    'name' => 'emails_tasks_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tasks',
+    'rhs_table' => 'tasks',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Tasks',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_users_rel' => 
+  array (
+    'name' => 'emails_users_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Users',
+    'rhs_table' => 'users',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Users',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_project_task_rel' => 
+  array (
+    'name' => 'emails_project_task_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'ProjectTask',
+    'rhs_table' => 'project_task',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'ProjectTask',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_projects_rel' => 
+  array (
+    'name' => 'emails_projects_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Project',
+    'rhs_table' => 'project',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Project',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_prospects_rel' => 
+  array (
+    'name' => 'emails_prospects_rel',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Prospects',
+    'rhs_table' => 'prospects',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Prospects',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
+  'emails_quotes' => 
+  array (
+    'name' => 'emails_quotes',
+    'lhs_module' => 'Emails',
+    'lhs_table' => 'emails',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Quotes',
+    'rhs_table' => 'quotes',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'emails_beans',
+    'join_key_lhs' => 'email_id',
+    'join_key_rhs' => 'bean_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'Quotes',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'email_id',
+        'type' => 'varchar',
+        'dbType' => 'id',
+        'len' => '36',
+        'comment' => 'FK to emails table',
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'dbType' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+        'comment' => 'FK to various beans\'s tables',
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => '100',
+        'comment' => 'bean\'s Module',
+      ),
+      4 => 
+      array (
+        'name' => 'campaign_data',
+        'type' => 'text',
+      ),
+      5 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      6 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'default' => '0',
+        'required' => false,
+      ),
+    ),
+  ),
   'teams_favorite' => 
   array (
     'name' => 'teams_favorite',
@@ -1557,810 +2361,6 @@
     'join_key_lhs' => 'contact_id',
     'join_key_rhs' => 'user_id',
     'user_field' => 'user_id',
-  ),
-  'emails_accounts_rel' => 
-  array (
-    'name' => 'emails_accounts_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Accounts',
-    'rhs_table' => 'accounts',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Accounts',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_bugs_rel' => 
-  array (
-    'name' => 'emails_bugs_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Bugs',
-    'rhs_table' => 'bugs',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Bugs',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_cases_rel' => 
-  array (
-    'name' => 'emails_cases_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Cases',
-    'rhs_table' => 'cases',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Cases',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_contacts_rel' => 
-  array (
-    'name' => 'emails_contacts_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Contacts',
-    'rhs_table' => 'contacts',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Contacts',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_leads_rel' => 
-  array (
-    'name' => 'emails_leads_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Leads',
-    'rhs_table' => 'leads',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Leads',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_opportunities_rel' => 
-  array (
-    'name' => 'emails_opportunities_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Opportunities',
-    'rhs_table' => 'opportunities',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Opportunities',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_tasks_rel' => 
-  array (
-    'name' => 'emails_tasks_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Tasks',
-    'rhs_table' => 'tasks',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Tasks',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_users_rel' => 
-  array (
-    'name' => 'emails_users_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Users',
-    'rhs_table' => 'users',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Users',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_project_task_rel' => 
-  array (
-    'name' => 'emails_project_task_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'ProjectTask',
-    'rhs_table' => 'project_task',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'ProjectTask',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_projects_rel' => 
-  array (
-    'name' => 'emails_projects_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Project',
-    'rhs_table' => 'project',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Project',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_prospects_rel' => 
-  array (
-    'name' => 'emails_prospects_rel',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Prospects',
-    'rhs_table' => 'prospects',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Prospects',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
-  ),
-  'emails_quotes' => 
-  array (
-    'name' => 'emails_quotes',
-    'lhs_module' => 'Emails',
-    'lhs_table' => 'emails',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Quotes',
-    'rhs_table' => 'quotes',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'emails_beans',
-    'join_key_lhs' => 'email_id',
-    'join_key_rhs' => 'bean_id',
-    'relationship_role_column' => 'bean_module',
-    'relationship_role_column_value' => 'Quotes',
-    'fields' => 
-    array (
-      0 => 
-      array (
-        'name' => 'id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-      ),
-      1 => 
-      array (
-        'name' => 'email_id',
-        'type' => 'varchar',
-        'dbType' => 'id',
-        'len' => '36',
-        'comment' => 'FK to emails table',
-      ),
-      2 => 
-      array (
-        'name' => 'bean_id',
-        'dbType' => 'id',
-        'type' => 'varchar',
-        'len' => '36',
-        'comment' => 'FK to various beans\'s tables',
-      ),
-      3 => 
-      array (
-        'name' => 'bean_module',
-        'type' => 'varchar',
-        'len' => '100',
-        'comment' => 'bean\'s Module',
-      ),
-      4 => 
-      array (
-        'name' => 'campaign_data',
-        'type' => 'text',
-      ),
-      5 => 
-      array (
-        'name' => 'date_modified',
-        'type' => 'datetime',
-      ),
-      6 => 
-      array (
-        'name' => 'deleted',
-        'type' => 'bool',
-        'len' => '1',
-        'default' => '0',
-        'required' => false,
-      ),
-    ),
   ),
   'meetings_contacts' => 
   array (
@@ -6999,6 +6999,20 @@
         'default' => '0',
       ),
     ),
+  ),
+  'team_memberships' => 
+  array (
+    'name' => 'team_memberships',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Users',
+    'rhs_table' => 'users',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_memberships',
+    'join_key_lhs' => 'team_id',
+    'join_key_rhs' => 'user_id',
   ),
   'aclrolesets_favorite' => 
   array (
@@ -12146,6 +12160,97 @@
     'rhs_key' => 'user_id',
     'relationship_type' => 'one-to-many',
   ),
+  'tracker_tracker_queries' => 
+  array (
+    'name' => 'tracker_tracker_queries',
+    'table' => 'tracker_tracker_queries',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'int',
+        'len' => '11',
+        'isnull' => 'false',
+        'auto_increment' => true,
+        'reportable' => false,
+      ),
+      'monitor_id' => 
+      array (
+        'name' => 'monitor_id',
+        'type' => 'id',
+        'len' => '36',
+      ),
+      'query_id' => 
+      array (
+        'name' => 'query_id',
+        'type' => 'id',
+        'len' => '36',
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'tracker_tracker_queriespk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'idx_tracker_tq_monitor',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'monitor_id',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'idx_tracker_tq_query',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'query_id',
+        ),
+      ),
+    ),
+    'relationships' => 
+    array (
+      'tracker_tracker_queries' => 
+      array (
+        'lhs_module' => 'Trackers',
+        'lhs_table' => 'tracker',
+        'lhs_key' => 'monitor_id',
+        'rhs_module' => 'TrackerQueries',
+        'rhs_table' => 'tracker_queries',
+        'rhs_key' => 'query_id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'tracker_tracker_queries',
+        'join_key_lhs' => 'monitor_id',
+        'join_key_rhs' => 'query_id',
+      ),
+    ),
+    'lhs_module' => 'Trackers',
+    'lhs_table' => 'tracker',
+    'lhs_key' => 'monitor_id',
+    'rhs_module' => 'TrackerQueries',
+    'rhs_table' => 'tracker_queries',
+    'rhs_key' => 'query_id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tracker_tracker_queries',
+    'join_key_lhs' => 'monitor_id',
+    'join_key_rhs' => 'query_id',
+  ),
   'documents_favorite' => 
   array (
     'name' => 'documents_favorite',
@@ -12916,20 +13021,6 @@
     'rhs_table' => 'saved_reports',
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
-  ),
-  'team_memberships' => 
-  array (
-    'name' => 'team_memberships',
-    'lhs_module' => 'Teams',
-    'lhs_table' => 'teams',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Users',
-    'rhs_table' => 'users',
-    'rhs_key' => 'id',
-    'relationship_type' => 'many-to-many',
-    'join_table' => 'team_memberships',
-    'join_key_lhs' => 'team_id',
-    'join_key_rhs' => 'user_id',
   ),
   'quotes_favorite' => 
   array (
